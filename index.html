@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AESTHETIC × Teamboys — Graduation Photos, Palembang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500;1,9..144,600&family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0b0a08;
+    --ink-2:#151210;
+    --ink-3:#1e1a16;
+    --cream:#f4efe4;
+    --cream-dim:#c9c0af;
+    --muted:#8b8377;
+    --brass:#c9a15c;
+    --brass-dim:#8a7247;
+    --wine:#6e2430;
+    --card:#f4efe4;
+    --line: rgba(244,239,228,0.14);
+    --radius: 2px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--cream);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--brass);color:var(--ink);}
+
+  h1,h2,h3{font-family:'Fraunces',serif;margin:0;font-weight:600;}
+  .serif-italic{font-style:italic;font-weight:500;}
+  .heavy{font-family:'Space Grotesk',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.01em;}
+  .eyebrow{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:12px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--brass);
+    display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--brass);display:inline-block;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+  section{position:relative;}
+
+  /* corner mark — the recurring outline-square signature borrowed from the brand's own pricelist */
+  .corner{
+    position:absolute;
+    width:16px;height:16px;
+    border:1.5px solid var(--brass-dim);
+    opacity:0.7;
+  }
+
+  /* ---------- NAV ---------- */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(11,10,8,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1180px;margin:0 auto;padding:16px 32px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .logo{display:flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:0.14em;font-size:14px;}
+  .logo .box{width:14px;height:14px;border:1.5px solid var(--cream);}
+  .logo small{display:block;font-family:'Inter';font-weight:400;letter-spacing:0.24em;font-size:8px;color:var(--muted);text-transform:uppercase;margin-top:1px;}
+  nav ul{list-style:none;display:flex;gap:34px;margin:0;padding:0;}
+  nav ul li a{font-size:13px;letter-spacing:0.03em;color:var(--cream-dim);transition:color .25s;}
+  nav ul li a:hover{color:var(--brass);}
+  .nav-cta{
+    border:1px solid var(--brass);color:var(--brass);
+    padding:9px 18px;font-size:12px;letter-spacing:0.08em;
+    font-family:'Space Grotesk',sans-serif;font-weight:500;
+    transition:all .25s;white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--brass);color:var(--ink);}
+  .burger{display:none;width:22px;height:16px;flex-direction:column;justify-content:space-between;cursor:pointer;background:none;border:none;padding:0;}
+  .burger span{display:block;height:1.5px;background:var(--cream);width:100%;}
+
+  /* ---------- HERO ---------- */
+  /* ---------- HERO ---------- */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 0 60px;
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(11, 10, 8, 0.98) 0%,
+      rgba(11, 10, 8, 0.95) 25%,
+      rgba(11, 10, 8, 0.78) 42%,
+      rgba(11, 10, 8, 0.38) 65%,
+      rgba(11, 10, 8, 0.12) 100%
+    ),
+    url('download\ \(3\).jpg');
+
+  background-size: cover;
+  background-position: 58% center;
+  background-repeat: no-repeat;
+}
+
+/* ---------- HERO GRID ---------- */
+.hero-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 48% 52%;
+  gap: 0;
+  align-items: center;
+}
+
+/* ---------- HERO CONTENT ---------- */
+.hero-grid > div:first-child {
+  width: 100%;
+  max-width: 570px;
+  justify-self: start;
+  text-align: left;
+  position: relative;
+  z-index: 5;
+}
+
+/* ---------- TAG ---------- */
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  border: 1px solid var(--line);
+  padding: 6px 14px;
+
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+
+  color: var(--brass);
+  margin-bottom: 28px;
+}
+
+.tag-pill .dot {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--brass);
+}
+
+/* ---------- HERO TITLE ---------- */
+.hero h1 {
+  margin: 0;
+  max-width: 570px;
+
+  font-size: clamp(38px, 4.6vw, 62px);
+  line-height: 1.05;
+
+  color: var(--cream);
+  text-align: left;
+}
+
+.hero h1 em {
+  color: var(--brass);
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* ---------- HERO DESCRIPTION ---------- */
+.hero p.lede {
+  margin-top: 26px;
+  max-width: 480px;
+
+  color: var(--cream-dim);
+  font-size: 16px;
+  line-height: 1.7;
+
+  text-align: left;
+}
+
+/* ---------- HERO BUTTONS ---------- */
+.hero-ctas {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+
+  margin-top: 38px;
+  flex-wrap: wrap;
+}
+
+.btn-solid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--brass);
+  color: var(--ink);
+
+  padding: 15px 30px;
+
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-solid:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(201, 161, 92, 0.25);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--line);
+  color: var(--cream);
+
+  padding: 15px 30px;
+
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.btn-ghost:hover {
+  border-color: var(--brass);
+  color: var(--brass);
+}
+
+/* ---------- CREDIT ---------- */
+.hero-credit {
+  margin-top: 52px;
+
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+
+  text-align: left;
+}
+
+.hero-credit b {
+  color: var(--cream-dim);
+  font-weight: 600;
+}
+
+/* ---------- DECORATION ---------- */
+.hero-cloud {
+  position: absolute;
+  right: 7%;
+  top: 22%;
+
+  width: 150px;
+
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.hero-cloud svg {
+  width: 100%;
+  display: block;
+}
+
+/* Image tidak ditampilkan sebagai elemen terpisah */
+.hero-art {
+  display: none;
+}
+
+/* ---------- LARGE SCREEN ---------- */
+@media (min-width: 1400px) {
+  .hero {
+    background-position: 62% center;
+  }
+
+  .hero-grid {
+    grid-template-columns: 46% 54%;
+  }
+
+  .hero-grid > div:first-child {
+    max-width: 600px;
+  }
+
+  .hero h1 {
+    max-width: 600px;
+  }
+}
+
+/* ---------- TABLET ---------- */
+@media (max-width: 900px) {
+  .hero {
+    min-height: 100vh;
+    padding: 110px 0 60px;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(11, 10, 8, 0.97) 0%,
+        rgba(11, 10, 8, 0.88) 48%,
+        rgba(11, 10, 8, 0.40) 100%
+      ),
+      url('hero.png');
+
+    background-size: cover;
+    background-position: 65% center;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .hero-grid > div:first-child {
+    max-width: 560px;
+    justify-self: start;
+  }
+
+  .hero h1 {
+    font-size: clamp(40px, 7vw, 58px);
+  }
+
+  .hero p.lede {
+    max-width: 500px;
+  }
+
+  .hero-cloud {
+    right: 5%;
+    top: 18%;
+    width: 110px;
+    opacity: 0.55;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 100vh;
+    padding: 100px 0 50px;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(11, 10, 8, 0.98) 0%,
+        rgba(11, 10, 8, 0.90) 55%,
+        rgba(11, 10, 8, 0.45) 100%
+      ),
+      url('hero.png');
+
+    background-size: cover;
+    background-position: 72% center;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    padding: 0 24px;
+  }
+
+  .hero-grid > div:first-child {
+    max-width: 100%;
+  }
+
+  .tag-pill {
+    margin-bottom: 22px;
+    font-size: 10px;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(36px, 11vw, 52px);
+    line-height: 1.03;
+  }
+
+  .hero p.lede {
+    max-width: 100%;
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .hero-ctas {
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .btn-solid,
+  .btn-ghost {
+    padding: 13px 20px;
+    font-size: 11px;
+  }
+
+  .hero-credit {
+    margin-top: 32px;
+    font-size: 10px;
+  }
+
+  .hero-cloud {
+    right: 2%;
+    top: 13%;
+    width: 85px;
+    opacity: 0.35;
+  }
+}
+  /* ---------- SECTION HEADS ---------- */
+  .section-head{margin-bottom:56px;}
+  .section-head h2{font-size:clamp(30px,4vw,46px);color:var(--cream);margin-top:14px;}
+  .section-head .arrow-line{
+    display:flex;align-items:center;gap:14px;margin-top:22px;
+  }
+  .arrow-line .line{height:1px;width:80px;background:var(--brass-dim);}
+  .arrow-line .arrow{color:var(--brass);font-size:18px;}
+
+  /* ---------- ABOUT ---------- */
+  #about{padding:150px 0 120px;border-top:1px solid var(--line);}
+  .about-grid{display:grid;grid-template-columns:1fr 0.85fr;gap:70px;align-items:start;}
+  .about-grid p{color:var(--cream-dim);line-height:1.85;font-size:15.5px;margin:0 0 20px;}
+  .about-grid strong{color:var(--cream);font-weight:600;}
+  .about-visual{
+    position:relative;border:1px solid var(--line);
+    background:linear-gradient(160deg, #17140f, #0e0c0a 65%);
+    aspect-ratio:4/5;
+    display:flex;align-items:flex-end;padding:26px;
+    background-size:cover;background-position:center;
+    overflow:hidden;
+  }
+  .about-visual.photo{
+    background-image:linear-gradient(180deg, rgba(11,10,8,0) 45%, rgba(11,10,8,0.85) 100%), var(--photo);
+  }
+  .about-visual .glow{
+    position:absolute;top:14%;left:50%;transform:translateX(-50%);
+    width:70%;height:50%;
+    background:radial-gradient(ellipse at center, rgba(201,161,92,0.18), transparent 70%);
+    filter:blur(6px);
+  }
+  .about-visual.photo .glow{display:none;}
+  .about-visual .label{
+    position:relative;z-index:2;
+    font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:0.1em;
+    color:var(--brass);text-transform:uppercase;
+  }
+  .about-stats{display:flex;gap:36px;margin-top:34px;flex-wrap:wrap;}
+  .about-stats div b{display:block;font-family:'Fraunces',serif;font-size:30px;color:var(--brass);}
+  .about-stats div span{font-size:12px;color:var(--muted);letter-spacing:0.04em;}
+
+  /* ---------- PACKAGES ---------- */
+  #packages{padding:120px 0;border-top:1px solid var(--line);}
+  .cat-nav{
+    display:flex;gap:10px;flex-wrap:wrap;margin-bottom:56px;
+  }
+  .cat-nav button{
+    font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:0.06em;
+    text-transform:uppercase;background:none;border:1px solid var(--line);
+    color:var(--cream-dim);padding:10px 18px;cursor:pointer;transition:all .2s;
+  }
+  .cat-nav button.active, .cat-nav button:hover{border-color:var(--brass);color:var(--brass);}
+
+  .cat-block{display:none;}
+  .cat-block.active{display:block;animation:fade .4s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+
+  .cat-title{display:flex;align-items:baseline;gap:16px;margin-bottom:34px;flex-wrap:wrap;}
+  .cat-title h3{font-size:clamp(24px,3vw,34px);}
+  .cat-title span{color:var(--muted);font-size:14px;font-family:'Inter';}
+
+  .cat-body{display:grid;grid-template-columns:0.85fr 1.15fr;gap:44px;align-items:start;}
+  .cat-visual{border:1px solid var(--line);aspect-ratio:3/4;background-size:cover;background-position:center;}
+  @media (max-width:900px){.cat-body{grid-template-columns:1fr;} .cat-visual{aspect-ratio:16/10;}}
+  .pkg-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;}
+  .pkg-card{
+    position:relative;
+    border:1px solid var(--line);
+    padding:34px 30px;
+    background:var(--ink-2);
+    transition:border-color .25s, transform .25s;
+  }
+  .pkg-card:hover{transform:translateY(-4px);border-color:var(--brass-dim);}
+  .pkg-card.best{
+    background:var(--card);color:var(--ink);border-color:var(--card);
+  }
+  .pkg-card.best .pkg-desc{color:#5c5548;}
+  .pkg-card.best .pkg-price{color:var(--wine);}
+  .ribbon{
+    position:absolute;top:-14px;left:26px;
+    width:38px;height:50px;
+    background:var(--brass);
+    clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%);
+    display:flex;align-items:flex-start;justify-content:center;padding-top:8px;
+  }
+  .ribbon svg{width:16px;height:16px;fill:var(--ink);}
+  .pkg-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.03em;text-transform:uppercase;}
+  .pkg-price{
+    font-family:'Fraunces',serif;font-style:italic;font-weight:500;
+    font-size:30px;color:var(--brass);margin:14px 0 18px;
+  }
+  .pkg-desc{color:var(--cream-dim);font-size:14.5px;line-height:1.75;}
+
+  /* ---------- EXTRAS ---------- */
+  #extras{padding:0 0 130px;}
+  .extras-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:26px;}
+  .extra-card{border:1px solid var(--line);padding:30px 28px;background:var(--ink-2);}
+  .extra-card.flag{background:var(--card);color:var(--ink);}
+  .extra-card h4{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:22px;margin-bottom:18px;}
+  .extra-card.flag h4{color:var(--wine);}
+  .extra-list{list-style:none;margin:0;padding:0;font-size:13.5px;color:var(--cream-dim);}
+  .extra-list li{
+    display:flex;justify-content:space-between;gap:10px;
+    padding:9px 0;border-bottom:1px dashed var(--line);
+  }
+  .extra-list li:last-child{border-bottom:none;}
+  .extra-list li b{color:var(--brass);font-weight:600;white-space:nowrap;}
+  .extra-card.flag .extra-list li{color:#5c5548;border-bottom-color:rgba(0,0,0,0.12);}
+  .extra-card.flag .extra-list li b{color:var(--wine);}
+  .extra-card p{font-size:14px;line-height:1.7;color:var(--cream-dim);}
+  .extra-card.flag p{color:#3a352c;}
+
+  /* ---------- PROCESS ---------- */
+  #process{padding:120px 0;border-top:1px solid var(--line);}
+  .process-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;}
+  .steps{list-style:none;margin:0;padding:0;counter-reset:step;}
+  .steps li{
+    counter-increment:step;
+    display:grid;grid-template-columns:44px 1fr;gap:18px;
+    padding:22px 0;border-bottom:1px solid var(--line);
+  }
+  .steps li:first-child{padding-top:0;}
+  .steps li::before{
+    content:counter(step,decimal-leading-zero);
+    font-family:'Fraunces',serif;font-style:italic;color:var(--brass);font-size:20px;
+  }
+  .steps li p{margin:0;color:var(--cream-dim);font-size:14.5px;line-height:1.7;}
+  .steps li p b{color:var(--cream);}
+
+  .notice{
+    border:1px solid var(--wine);background:rgba(110,36,48,0.12);
+    padding:26px 28px;margin-top:30px;
+  }
+  .notice h4{font-family:'Space Grotesk',sans-serif;color:#e4899a;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px;}
+  .notice p{margin:0 0 8px;font-size:14px;color:var(--cream-dim);line-height:1.6;}
+  .notice p:last-child{margin-bottom:0;}
+  .notice b{color:var(--cream);}
+
+  /* ---------- PORTFOLIO ---------- */
+  #portfolio{padding:120px 0;border-top:1px solid var(--line);}
+  .gallery{
+    display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:12px;
+  }
+  .g-item{
+    position:relative;overflow:hidden;
+    display:flex;align-items:flex-end;padding:16px;
+    font-family:'Space Grotesk',sans-serif;font-size:11px;letter-spacing:0.08em;
+    text-transform:uppercase;color:var(--cream-dim);
+  }
+  .g-item span{position:relative;z-index:2;}
+  .g-item::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.65));}
+  .g-item{background-size:cover;background-position:center;}
+  .g1{grid-column:span 2;grid-row:span 2;background-image:url('Hallway Silhouette.jpg');}
+  .g2{grid-column:span 2;background-image:url('Couple.jpg');background-position:center 30%;}
+  .g3{grid-column:span 1;background-image:url('Sash & Cap .jpg');}
+  .g4{grid-column:span 1;grid-row:span 2;background-image:url('Window Light.jpg');}
+  .g5{grid-column:span 2;background-image:url('Studio Drama.jpg');background-position:center 25%;}
+
+  /* ---------- CONTACT ---------- */
+  #contact{padding:130px 0;border-top:1px solid var(--line);}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+  .contact-cards{display:grid;gap:16px;}
+  .c-card{
+    border:1px solid var(--line);padding:22px 24px;
+    display:flex;align-items:center;gap:16px;background:var(--ink-2);
+    transition:border-color .2s;
+  }
+  .c-card:hover{border-color:var(--brass-dim);}
+  .c-card .ic{width:38px;height:38px;border-radius:50%;background:var(--brass);color:var(--ink);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .c-card .ic svg{width:18px;height:18px;fill:currentColor;}
+  .c-card .t small{display:block;color:var(--muted);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:3px;}
+  .c-card .t b{font-size:15px;font-weight:500;color:var(--cream);}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    padding:110px 0 50px;position:relative;
+    background:linear-gradient(180deg,#0b0a08, #050403);
+    border-top:1px solid var(--line);
+  }
+  .footer-top h2{font-size:clamp(48px,9vw,110px);line-height:0.92;}
+  .footer-top .thank{color:var(--brass);}
+  .footer-bottom{
+    display:flex;justify-content:space-between;align-items:center;
+    margin-top:70px;padding-top:26px;border-top:1px solid var(--line);
+    font-size:12px;color:var(--muted);flex-wrap:wrap;gap:16px;
+  }
+  .footer-bottom a{color:var(--cream-dim);}
+  .to-top{border:1px solid var(--line);width:38px;height:38px;display:flex;align-items:center;justify-content:center;transition:border-color .2s;}
+  .to-top:hover{border-color:var(--brass);}
+
+  @media (max-width: 900px){
+    nav ul{display:none;}
+    .burger{display:flex;}
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-art{order:-1;max-width:260px;margin:0 auto 20px;}
+    .about-grid{grid-template-columns:1fr;}
+    .pkg-grid{grid-template-columns:1fr;}
+    .extras-grid{grid-template-columns:1fr;}
+    .process-grid{grid-template-columns:1fr;gap:40px;}
+    .contact-grid{grid-template-columns:1fr;}
+    .gallery{grid-template-columns:repeat(2,1fr);}
+    .g1,.g4{grid-row:span 1;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <div class="logo">
+      <span class="box"></span>
+      <div>AESTHETIC<small>Graduation Photos Concept</small></div>
+    </div>
+    <nav><ul>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#packages">Paket</a></li>
+      <li><a href="#process">Ketentuan</a></li>
+      <li><a href="#portfolio">Portofolio</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul></nav>
+    <a class="nav-cta" href="https://wa.me/6285267374848" target="_blank" rel="noopener">Booking via WA</a>
+    <button class="burger" onclick="document.getElementById('mnav').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+  <div id="mnav" style="display:none;flex-direction:column;background:var(--ink-2);border-top:1px solid var(--line);padding:10px 32px 20px;">
+    <a href="#about" style="padding:12px 0;">Tentang</a>
+    <a href="#packages" style="padding:12px 0;">Paket</a>
+    <a href="#process" style="padding:12px 0;">Ketentuan</a>
+    <a href="#portfolio" style="padding:12px 0;">Portofolio</a>
+    <a href="#contact" style="padding:12px 0;">Kontak</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-cloud">
+    <svg viewBox="0 0 300 300" fill="none" stroke="#c9a15c" stroke-width="1.4">
+      <path d="M95 90 C80 70 100 45 125 50 C145 54 150 75 145 92 C160 88 172 100 168 118 C185 112 198 128 190 145 C205 150 205 172 188 180 C192 200 172 212 155 205 C150 222 128 226 118 210 C100 218 82 205 85 186 C68 190 55 175 62 158 C48 152 47 132 62 122 C55 108 65 90 82 92 C85 88 90 88 95 90 Z"/>
+      <path d="M175 78 C160 55 185 32 210 40 C232 47 235 70 228 86 C246 80 262 95 256 114 C275 110 288 130 278 148 C296 156 293 180 273 186 C280 206 258 220 240 210" />
+      <circle cx="112" cy="122" r="2.2" fill="#c9a15c" stroke="none"/>
+      <circle cx="138" cy="118" r="2.2" fill="#c9a15c" stroke="none"/>
+      <path d="M108 148 C118 156 130 156 140 148" />
+      <path d="M195 108 C205 116 217 116 227 108" />
+    </svg>
+  </div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="tag-pill"><span class="dot"></span>#BEYOUROWNSTORY</div>
+      <h1>Wisudamu,<br>diceritakan lewat<br><em>cahaya & momen.</em></h1>
+      <p class="lede">AESTHETIC merangkai hari kelulusanmu jadi cerita visual yang mewah, ikonik, dan benar-benar milikmu — digarap oleh Teamboys, tim fotografer di balik Fatrah Fhotograf, Palembang.</p>
+      <div class="hero-ctas">
+        <a class="btn-solid" href="#packages">Lihat Paket</a>
+        <a class="btn-ghost" href="https://wa.me/6285267374848" target="_blank" rel="noopener">Chat Admin</a>
+      </div>
+      <div class="hero-credit">Foto & konsep oleh <b>Fatrah Fhotograf</b> — Palembang</div>
+    </div>
+    <div class="hero-art">
+      <div class="frame"><span class="corner c1"></span><span class="corner c2"></span></div>
+      <img src="download (3).jpg" alt="Fotografer AESTHETIC memotret saat golden hour">
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="eyebrow">Aesthetic × Teamboys</div>
+      <div class="section-head">
+        <h2>Tentang Kami</h2>
+      </div>
+      <p>Kami adalah studio foto wisuda di bawah naungan <strong>Fatrah Fhotograf</strong>, berbasis di Palembang. Setiap sesi kami rancang dengan konsep yang mewah, khas, dan mudah dikenali — jauh dari kesan foto studio pada umumnya.</p>
+      <p>Bagi kami, hasil jepretan bukan sekadar file foto. Ia adalah bukti emosional dari perjalanan panjang menuju satu titik: hari kelulusanmu. Itu sebabnya setiap frame digarap oleh tim <strong>Teamboys</strong> dengan standar servis dan kualitas yang konsisten dari konsultasi awal hingga file diterima.</p>
+      <div class="about-stats">
+        <div><b>11</b><span>Pilihan Paket</span></div>
+        <div><b>7–14</b><span>Hari Kerja Edit</span></div>
+        <div><b>1</b><span>Kota, Palembang</span></div>
+      </div>
+    </div>
+    <div class="about-visual photo" style="--photo:url('teamboys.jpg');">
+      <div class="label">Be Your Own Story —</div>
+    </div>
+  </div>
+</section>
+
+<section id="packages">
+  <div class="wrap">
+    <div class="eyebrow">Pricelist 2026</div>
+    <div class="section-head">
+      <h2>Paket yang Bicara<br>Bahasa Ceritamu.</h2>
+      <div class="arrow-line"><span class="line"></span><span class="arrow">→</span></div>
+    </div>
+
+    <div class="cat-nav" id="catNav">
+      <button data-cat="single" class="active">Single</button>
+      <button data-cat="family">Single + Family</button>
+      <button data-cat="couple">Couple</button>
+      <button data-cat="group">Group</button>
+      <button data-cat="studio">Studio</button>
+      <button data-cat="special">Cinematic + Photo</button>
+    </div>
+
+    <!-- SINGLE -->
+    <div class="cat-block active" data-cat="single">
+      <div class="cat-title"><h3>Single Package</h3><span>Untuk kamu yang tampil sendiri di frame</span></div>
+      <div class="cat-body">
+        <!-- <div class="cat-visual" style="background-image:url('Assets/pkg-single.jpg');"></div> -->
+        <div class="pkg-grid">
+          <div class="pkg-card">
+            <div class="pkg-name">Single Silver</div>
+            <div class="pkg-price">500K</div>
+            <div class="pkg-desc">30 menit sesi · 15 file edit · foto unlimited · 1 orang wisudawan.</div>
+          </div>
+          <div class="pkg-card best">
+            <div class="ribbon"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.3 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z"/></svg></div>
+            <div class="pkg-name">Single Gold</div>
+            <div class="pkg-price">700K</div>
+            <div class="pkg-desc">1 jam sesi · 25 file edit · foto unlimited · 1 orang wisudawan. <b>Best seller.</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAMILY -->
+    <div class="cat-block" data-cat="family">
+      <div class="cat-title"><h3>Single + Family Package</h3><span>Ajak keluarga masuk ke frame kelulusanmu</span></div>
+      <div class="cat-body">
+        <!-- <div class="cat-visual" style="background-image:url('Assets/pkg-family.jpg');"></div> -->
+        <div class="pkg-grid">
+          <div class="pkg-card best">
+            <div class="ribbon"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.3 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z"/></svg></div>
+            <div class="pkg-name">Family Silver</div>
+            <div class="pkg-price">700K</div>
+            <div class="pkg-desc">1 jam sesi · 25 file edit · foto unlimited · 1 wisudawan + maks. 8 keluarga. <b>Best seller.</b></div>
+          </div>
+          <div class="pkg-card">
+            <div class="pkg-name">Family Gold</div>
+            <div class="pkg-price">1.400K</div>
+            <div class="pkg-desc">2 jam sesi · 35 file edit · foto unlimited · 1 wisudawan + maks. 15 keluarga.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COUPLE -->
+    <div class="cat-block" data-cat="couple">
+      <div class="cat-title"><h3>Couple Package</h3><span>Dua cerita, satu momen kelulusan</span></div>
+      <div class="cat-body">
+        <!-- <div class="cat-visual" style="background-image:url('Assets/pkg-couple.jpg');background-position:center 20%;"></div> -->
+        <div class="pkg-grid">
+          <div class="pkg-card best">
+            <div class="ribbon"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.3 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z"/></svg></div>
+            <div class="pkg-name">Couple Silver</div>
+            <div class="pkg-price">700K</div>
+            <div class="pkg-desc">1 jam sesi · 25 file edit · foto unlimited · 2 orang wisudawan. <b>Best seller.</b></div>
+          </div>
+          <div class="pkg-card">
+            <div class="pkg-name">Couple Gold</div>
+            <div class="pkg-price">1.400K</div>
+            <div class="pkg-desc">2 jam sesi · 35 file edit · foto unlimited · 2 orang wisudawan.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GROUP -->
+    <div class="cat-block" data-cat="group">
+      <div class="cat-title"><h3>Group Package</h3><span>Rayakan bareng geng seperjuangan</span></div>
+      <div class="cat-body">
+        <!-- <div class="cat-visual" style="background-image:url('Assets/pkg-group.jpg');"></div> -->
+        <div class="pkg-grid">
+          <div class="pkg-card">
+            <div class="pkg-name">Group Silver</div>
+            <div class="pkg-price">700K</div>
+            <div class="pkg-desc">1 jam sesi · 25 file edit · foto unlimited · 3–5 orang wisudawan.</div>
+          </div>
+          <div class="pkg-card">
+            <div class="pkg-name">Group Gold</div>
+            <div class="pkg-price">1.000K</div>
+            <div class="pkg-desc">1 jam sesi · 35 file edit · foto unlimited · 6–8 orang wisudawan.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STUDIO -->
+    <div class="cat-block" data-cat="studio">
+      <div class="cat-title"><h3>Studio Package</h3><span>Konsep dramatis, di dalam ruangan</span></div>
+      <div class="cat-body">
+        <!-- <div class="cat-visual" style="background-image:url('Assets/pkg-studio.jpg');background-position:center top;"></div> -->
+        <div class="pkg-grid">
+          <div class="pkg-card">
+            <div class="pkg-name">Studio Silver</div>
+            <div class="pkg-price">1.000K</div>
+            <div class="pkg-desc">1 jam sesi · 25 file edit · foto unlimited · 1 wisudawan + maks. 8 keluarga.</div>
+          </div>
+          <div class="pkg-card best">
+            <div class="ribbon"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.3 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z"/></svg></div>
+            <div class="pkg-name">Studio Gold</div>
+            <div class="pkg-price">1.500K</div>
+            <div class="pkg-desc">1 jam sesi · 25 file edit · foto unlimited · 1 wisudawan + maks. 8 keluarga, plus cetak 22R + frame 2 pcs. <b>Best seller.</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPECIAL -->
+    <div class="cat-block" data-cat="special">
+      <div class="cat-title"><h3>Special Package — Cinematic + Photo</h3><span>Untuk momen yang layak diputar ulang, bukan cuma dilihat</span></div>
+      <div class="cat-body">
+        <!-- <div class="cat-visual" style="background-image:url('Assets/pkg-special.jpg');"></div> -->
+        <div class="pkg-grid" style="grid-template-columns:1fr;">
+          <div class="pkg-card best" style="max-width:560px;">
+            <div class="ribbon"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.3 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z"/></svg></div>
+            <div class="pkg-name">Cinematic + Photo</div>
+            <div class="pkg-price">1.900K</div>
+            <div class="pkg-desc">2 jam sesi · 35 file edit · 1 video sinematik edit · 1 wisudawan + maks. 8 keluarga. <b>Best seller.</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="extras">
+  <div class="wrap extras-grid">
+    <div class="extra-card">
+      <h4>Tambahan.</h4>
+      <ul class="extra-list">
+        <li><span>1 orang wisudawan tambahan</span><b>200K</b></li>
+        <li><span>1 orang keluarga tambahan</span><b>50K</b></li>
+        <li><span>Tambahan 30 menit</span><b>300K</b></li>
+        <li><span>Tambahan 1 jam</span><b>600K</b></li>
+        <li><span>Video sinematik</span><b>1.500K</b></li>
+        <li><span>Edit foto tambahan</span><b>10K/foto</b></li>
+        <li><span>Cetak + frame + kanvas 12R</span><b>150K</b></li>
+        <li><span>Cetak + frame + kanvas 16R</span><b>250K</b></li>
+        <li><span>Cetak + frame + kanvas 22R</span><b>350K</b></li>
+        <li><span>Cetak + frame + kanvas 32R</span><b>550K</b></li>
+      </ul>
+    </div>
+    <div class="extra-card">
+      <h4>Direkomendasikan.</h4>
+      <p><b style="color:var(--cream);">Fast Track Editor</b><br>Buat kamu yang nggak mau menunggu lama — cukup tambahan 100K, file edit selesai dalam 1–2 hari kerja saja.</p>
+    </div>
+    <div class="extra-card flag">
+      <h4>Penting!!!</h4>
+      <p><b>Down Payment (DP) hangus</b> apabila client membatalkan jadwal secara sepihak.</p>
+      <p><b>Wajib on time.</b> Keterlambatan client akan memotong durasi sesi foto.</p>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap process-grid">
+    <div>
+      <div class="eyebrow">Client's Note</div>
+      <div class="section-head">
+        <h2>Alur Booking.</h2>
+      </div>
+      <ol class="steps">
+        <li><p><b>Konsultasi.</b> Hubungi admin AESTHETIC untuk diskusi konsep foto, lalu pilih paket dari pricelist.</p></li>
+        <li><p><b>Jadwal.</b> Tentukan lokasi, hari, tanggal, dan jam pemotretan bersama tim.</p></li>
+        <li><p><b>Pembayaran.</b> DP minimal 100K di awal, pelunasan dilakukan H-1 sebelum pemotretan.</p></li>
+        <li><p><b>File Raw.</b> Seluruh file mentah dikirim maksimal H+1 lewat Google Drive, dengan masa akses 1 minggu.</p></li>
+        <li><p><b>File Edit.</b> Estimasi selesai 7–14 hari kerja, kecuali menggunakan layanan Fast Track.</p></li>
+      </ol>
+    </div>
+    <div>
+      <div class="notice">
+        <h4>Ketentuan Pembatalan</h4>
+        <p>DP yang sudah dibayarkan tidak dapat dikembalikan (hangus) jika pembatalan dilakukan sepihak oleh client.</p>
+        <p>Sesi wajib dimulai tepat waktu — keterlambatan kedatangan akan mengurangi durasi sesi foto yang telah dipesan.</p>
+      </div>
+      <div class="about-visual photo" style="margin-top:26px;aspect-ratio:16/10;--photo:url('the next.jpg');background-position:center 20%;">
+        <div class="label">So, who's next? —</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="wrap">
+    <div class="eyebrow">Portfolio Aesthetic</div>
+    <div class="section-head">
+      <h2>So, Who's Next?</h2>
+      <div class="arrow-line"><span class="line"></span><span class="arrow">→</span></div>
+    </div>
+    <div class="gallery">
+      <div class="g-item g1"><span>Hallway Silhouette</span></div>
+      <div class="g-item g2"><span>Couple, Golden Hour</span></div>
+      <div class="g-item g3"><span>Sash & Cap</span></div>
+      <div class="g-item g4"><span>Window Light</span></div>
+      <div class="g-item g5"><span>Studio Drama</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">Admin Aesthetic</div>
+      <div class="section-head">
+        <h2>Ceritamu tinggal<br>selangkah lagi.</h2>
+      </div>
+      <p style="color:var(--cream-dim);line-height:1.8;max-width:420px;">Hubungi kami untuk konsultasi konsep, cek jadwal kosong, atau tanya-tanya paket yang paling cocok buat momen kelulusanmu.</p>
+    </div>
+    <div class="contact-cards">
+      <a class="c-card" href="https://wa.me/6285267374848" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.11-1.34A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.44-4.38-1.2l-.31-.19-3.03.79.8-2.95-.2-.32A7.94 7.94 0 014 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm4.4-5.6c-.24-.12-1.43-.7-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.42-1.33-1.66-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg></span>
+        <div class="t"><small>WhatsApp</small><b>0852-6737-4848 (mintik)</b></div>
+      </a>
+      <a class="c-card" href="https://instagram.com/aesthetic_fhotograf" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2.2c2.7 0 3 .01 4.12.06 1.11.05 1.87.23 2.53.49.68.27 1.26.63 1.83 1.2.57.57.93 1.15 1.2 1.83.26.66.44 1.42.49 2.53.05 1.12.06 1.42.06 4.12s-.01 3-.06 4.12c-.05 1.11-.23 1.87-.49 2.53-.27.68-.63 1.26-1.2 1.83-.57.57-1.15.93-1.83 1.2-.66.26-1.42.44-2.53.49-1.12.05-1.42.06-4.12.06s-3-.01-4.12-.06c-1.11-.05-1.87-.23-2.53-.49-.68-.27-1.26-.63-1.83-1.2-.57-.57-.93-1.15-1.2-1.83-.26-.66-.44-1.42-.49-2.53C2.21 15 2.2 14.7 2.2 12s.01-3 .06-4.12c.05-1.11.23-1.87.49-2.53.27-.68.63-1.26 1.2-1.83.57-.57 1.15-.93 1.83-1.2.66-.26 1.42-.44 2.53-.49C9 2.21 9.3 2.2 12 2.2zm0 1.8c-2.66 0-2.97.01-4.02.06-.97.04-1.5.21-1.85.35-.46.18-.79.4-1.14.75-.35.35-.57.68-.75 1.14-.14.35-.31.88-.35 1.85C3.84 9.03 3.84 9.34 3.84 12s.01 2.97.06 4.02c.04.97.21 1.5.35 1.85.18.46.4.79.75 1.14.35.35.68.57 1.14.75.35.14.88.31 1.85.35 1.05.05 1.36.06 4.02.06s2.97-.01 4.02-.06c.97-.04 1.5-.21 1.85-.35.46-.18.79-.4 1.14-.75.35-.35.57-.68.75-1.14.14-.35.31-.88.35-1.85.05-1.05.06-1.36.06-4.02s-.01-2.97-.06-4.02c-.04-.97-.21-1.5-.35-1.85-.18-.46-.4-.79-.75-1.14a3.02 3.02 0 00-1.14-.75c-.35-.14-.88-.31-1.85-.35-1.05-.05-1.36-.06-4.02-.06zm0 4.15a3.85 3.85 0 110 7.7 3.85 3.85 0 010-7.7zm0 1.8a2.05 2.05 0 100 4.1 2.05 2.05 0 000-4.1zm4.9-1.98a.9.9 0 11-1.8 0 .9.9 0 011.8 0z"/></svg></span>
+        <div class="t"><small>Instagram</small><b>@aesthetic_fhotograf · @fatrah_fhotograf</b></div>
+      </a>
+      <a class="c-card" href="mailto:aestheticfhotograf@gmail.com">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 12 4 6.01V6h16zM4 18V8l8 6 8-6v10H4z"/></svg></span>
+        <div class="t"><small>Email</small><b>aestheticfhotograf@gmail.com</b></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <h2>Thank<br><span class="thank">You.</span></h2>
+      <div class="arrow-line" style="margin-top:24px;"><span class="line"></span><span class="arrow">→</span><span style="font-family:'Space Grotesk',sans-serif;font-size:13px;letter-spacing:0.1em;color:var(--cream-dim);text-transform:uppercase;">Aesthetic × Teamboys</span></div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Aesthetic Fhotograf — a division of Fatrah Fhotograf, Palembang. #BEYOUROWNSTORY</div>
+      <a class="to-top" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // category tabs
+  const buttons = document.querySelectorAll('#catNav button');
+  const blocks = document.querySelectorAll('.cat-block');
+  buttons.forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      buttons.forEach(b=>b.classList.remove('active'));
+      blocks.forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelector('.cat-block[data-cat="'+btn.dataset.cat+'"]').classList.add('active');
+    });
+  });
+
+  // mobile nav
+  const mnav = document.getElementById('mnav');
+  document.querySelectorAll('#mnav a').forEach(a=>a.addEventListener('click',()=>{mnav.style.display='none';}));
+</script>
+
+</body>
+</html>
